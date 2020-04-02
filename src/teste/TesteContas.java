@@ -10,14 +10,14 @@ public class TesteContas {
 
 	public static void main(String[] args) {
 		
-		ContaCorrente cc = new ContaCorrente(016, 567854);
+		ContaCorrente cc = new ContaCorrente(16, 567854);
 		cc.titular = new Cliente();
 		cc.titular.setNome("João"); //composição
 		
 		cc.deposita(32.0);
 		System.out.println("CC:" + cc.getSaldo());
 		
-		ContaPoupanca cp = new ContaPoupanca(011, 532618);
+		ContaPoupanca cp = new ContaPoupanca(11, 532618);
 		cp.titular = new Cliente();
 		cp.titular.setNome("João");
 

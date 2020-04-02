@@ -4,7 +4,7 @@ import funcionario.Gerente;
 import funcionario.Administrador;
 import funcionario.SistemaInterno;
 
-public class Testando {
+public class TesteAutenticacao {
 	
 	public static void main(String[] args) {
 		
@@ -17,7 +17,6 @@ public class Testando {
 		SistemaInterno si = new SistemaInterno();
 		si.autentica(gerente);
 		si.autentica(adm);
-		
 		
 	}
 }

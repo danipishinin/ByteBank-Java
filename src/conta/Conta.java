@@ -26,7 +26,6 @@ public abstract class Conta {
 		  this.saldo -= valor;
 	}
    
-
     public void transfere(double valor, Conta destino) throws SaldoInsuficienteException{
         this.saca(valor);
         destino.deposita(valor);
@@ -68,4 +67,12 @@ public abstract class Conta {
         return " Numero: " + this.numero + ", Agencia: " + this.agencia;
     }
 
+    //reescrevendo método que compara objetos
+    @Override
+    public boolean equals(Object ref) {
+    	Conta outra = (Conta)ref;
+    	if(this.agencia != outra.agencia || this.numero != outra.numero)
+    		return false;
+    	return true;
+    }
 }
