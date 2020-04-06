@@ -1,6 +1,6 @@
 package conta;
 
-public abstract class Conta {
+public abstract class Conta implements Comparable<Conta>{
 
     protected double saldo;
     private int agencia;
@@ -75,4 +75,19 @@ public abstract class Conta {
     		return false;
     	return true;
     }
+
+	public void setTitular(Cliente cc) {
+		// TODO Auto-generated method stub
+		this.titular = cc;	
+	}
+	
+	public Cliente getTitular() {
+		// TODO Auto-generated method stub
+		return this.titular;
+	}
+	
+	@Override
+	public int compareTo(Conta outra) {
+		return Integer.compare(this.agencia, outra.agencia);
+	}
 }

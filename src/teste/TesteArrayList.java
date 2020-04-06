@@ -29,7 +29,5 @@ public class TesteArrayList {
 		for(Conta ref : lista) {
 			System.out.println(ref);
 		}
-		
-		
 	}
 }
