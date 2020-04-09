@@ -12,11 +12,6 @@ public class TesteLambda {
             nomes.add("Yoshi"); 
             nomes.add("Donkey Kong"); 
 
-            for(int i = 0; i < nomes.size(); i++) {
-                System.out.println(nomes.get(i));
-            }
-            
-            // é o mesmo que :
             nomes.forEach((nome) -> System.out.println(nome));
  }
 }
